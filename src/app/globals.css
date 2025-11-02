@@ -1,6 +1,18 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/** Custom CSS **/
+.icon{
+  color: darkgrey
+}
+
+#icon-link:hover{
+  color: #3E5569;
+}
+
+
+/** end **/
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
