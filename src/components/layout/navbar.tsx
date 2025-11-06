@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
     NavigationMenu,
     NavigationMenuContent,
@@ -15,16 +16,24 @@ export default function NavBar() {
             <NavigationMenu>
                 <NavigationMenuList className="flex space-x-6">
                     <NavigationMenuItem>
-                        <NavigationMenuLink>Home</NavigationMenuLink>
+                        <NavigationMenuLink asChild>
+                            <Link href="/">Home</Link>
+                        </NavigationMenuLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                        <NavigationMenuLink>Projects</NavigationMenuLink>
+                        <NavigationMenuLink asChild>
+                            <Link href="/projects">Projects</Link>
+                        </NavigationMenuLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                        <NavigationMenuLink>Resume</NavigationMenuLink>
+                        <NavigationMenuLink asChild>
+                            <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                        </NavigationMenuLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                        <NavigationMenuLink>Contact</NavigationMenuLink>
+                        <NavigationMenuLink asChild>
+                            <Link href="/contact">Contact</Link>
+                        </NavigationMenuLink>
                     </NavigationMenuItem>
                 </NavigationMenuList>
             </NavigationMenu>
