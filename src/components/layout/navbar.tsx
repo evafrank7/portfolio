@@ -27,7 +27,7 @@ export default function NavBar() {
                     </NavigationMenuItem>
                     <NavigationMenuItem>
                         <NavigationMenuLink asChild>
-                            <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                            <a href="resume/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
