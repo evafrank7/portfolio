@@ -26,7 +26,7 @@ export async function POST(req: Request) {
     await resend.emails.send({
       from:
         process.env.CONTACT_FROM_EMAIL ??
-        "Portfolio <no-reply@your-domain.com>", // must be a verified domain in Resend
+        "onboarding@resend.dev",
       to: process.env.CONTACT_TO_EMAIL,
       replyTo: body.email,
       subject: `New message from ${body.name}`,

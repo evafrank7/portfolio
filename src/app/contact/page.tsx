@@ -56,9 +56,9 @@ export default function ContactPage() {
 
   return (
     <>
-        <NavBar />
-    <section className="pt-25 flex items-center justify-center px-4 py-12">
-      <div className="w-full max-w-xl">
+    <NavBar />
+    <section className="flex items-center justify-center bg-gray-100">
+      <div className=" pt-25 w-full max-w-xl">
         <h1 className="text-3xl font-bold tracking-tight">Contact me</h1>
         <p className="text-muted-foreground mt-2">
           Have a question or inqury in mind? Send me a message below!
