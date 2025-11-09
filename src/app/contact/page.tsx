@@ -57,7 +57,7 @@ export default function ContactPage() {
   return (
     <>
     <NavBar />
-    <section className="flex items-center justify-center bg-gray-100">
+    <section className="h-screen flex flex-col justify-center items-center bg-gray-100 pb-70">
       <div className=" pt-25 w-full max-w-xl">
         <h1 className="text-3xl font-bold tracking-tight">Contact me</h1>
         <p className="text-muted-foreground mt-2">

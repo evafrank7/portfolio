@@ -11,7 +11,7 @@ export default function HomePage() {
   return (
     <>
       <NavBar />
-      <section className="h-screen flex flex-col justify-center items-center bg-gray-100">
+      <section className="h-screen flex flex-col justify-center items-center bg-gray-100 pb-25">
         <div className="relative w-75 h-75 rounded-full overflow-hidden border-4">
           <Image
             src="/eva.jpg"
@@ -23,7 +23,7 @@ export default function HomePage() {
           />
         </div>
         <h1 className="text-5xl font-bold mb-4">Eva Frankovic</h1>
-        <p className="text-center mb-6 mt-2 ml-10 mr-10"> I am currently a User Engagement Specialist at the Pittsburgh Supercomputing Center, part of Carnegie Mellon University. Where alongside of adminsitrative woek, I assist in. the development 
+        <p className="text-center mb-6 mt-2 ml-10 mr-10"> I am currently a User Engagement Specialist at the Pittsburgh Supercomputing Center, part of Carnegie Mellon University. Where alongside of adminsitrative work, I assist in. the development 
           of there internal web application using Ruby and Ruby on Rails. Recently, we have began tranisitioning the application to using React and Tailwind.css. I graduated from Bucknell University in May 2024 with a Bachelor’s degree in Computer Science.
           While at Bucknell, I competed on the university’s varsity soccer team, where we won two Patriot League Championships. Now, as a recent graduate, I’m continuing to grow my technical toolkit by exploring frameworks such
           as Bootstrap and React while strengthening my skills in HTML, CSS, and JavaScript. </p>

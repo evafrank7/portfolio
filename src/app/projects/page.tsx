@@ -5,24 +5,27 @@ import { faSafari } from "@fortawesome/free-brands-svg-icons";
 import NavBar from "@/components/layout/navbar";
 
 export default function ProjectsPage() {
-  // you can later replace this with data fetched from an API or a JSON file
+  // maybe create a json file to fetch? Implement a filtering feature???
   const projects = [
     {
       title: "Finance Tracker",
+      image: "/project-images/finance.png",
       description: "A Ruby on Rails app for tracking stock portfolios and user finances.",
       tech: "Ruby on Rails, PostgreSQL, Bootstrap",
       link: "https://github.com/evafrankovic/finance-tracker",
-      live: "",
+      live: "/",
     },
     {
       title: "Portfolio Website",
+      image: "/project-images/portfolio.png",
       description: "A modern developer portfolio built with Next.js and Tailwind CSS.",
       tech: "Next.js, Tailwind, TypeScript",
-      link: "https://evafrankovic.dev",
+      link: "https://github.com/evafrank7/portfolio",
       live: "/",
     },
     {
       title: "Message Me Chat App",
+      image: "/project-images/message.png",
       description: "A live chat app built in Rails 5 using Action Cable.",
       tech: "Ruby on Rails, Rails",
       link: "https://github.com/evafrankovic/message-me",
@@ -30,10 +33,27 @@ export default function ProjectsPage() {
     },
     {
       title: "AlphaBlog",
-      description: "A live chat app built in Rails 5 using Action Cable.",
+      image: "/project-images/blog.png",
+      description: "A full-stack Ruby on Rails blog app with user authentication, CRUD functionality, and responsive Bootstrap design.",
       tech: "Ruby on Rails, Rails, Bootstrap",
       link: "https://github.com/evafrank7/alphaBlog",
       live: "/",
+    },
+    {
+      title: "Movie API",
+      description: "A movie search app built with JavaScript and a public movie API to display film details, ratings, and posters in real time.",
+      image: "/project-images/movie.png",
+      tech: "React, Vite",
+      link: "https://github.com/evafrank7/movie-app",
+      live: "https://evafrank7.github.io/movie-app/",
+    },
+    {
+      title: "PSC Impact Stores",
+      image: "/project-images/psc.png",
+      description: "An interview assignment demostrating use of HTML, CSS, and a simple back-end component.",
+      tech: "HTML, CSS, JSON, Bootstrap",
+      link: "https://github.com/evafrank7/PSC?tab=readme-ov-file",
+      live: "https://psc-kbhx.onrender.com/",
     },
   ];
 
@@ -48,6 +68,11 @@ export default function ProjectsPage() {
               <CardHeader>
                 <CardTitle>{project.title}</CardTitle>
                 <CardDescription>{project.tech}</CardDescription>
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className='aspect-video h-50 w-full rounded-xl object-cover'
+                />
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700 mb-4">{project.description}</p>
