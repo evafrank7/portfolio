@@ -2,13 +2,29 @@
 @import "tw-animate-css";
 
 /** Custom CSS **/
-.icon{
-  color: darkgrey
+.icon {
+  width: 3.25rem; 
+  height: 3.25rem;
+  color: #374151; 
+  transition: color 0.2s ease-in-out;
 }
 
-.icon-link:hover{
-  color: #3E5569;
+.icon:hover {
+  color: #1F487E; 
 }
+
+.button {
+  width: 10rem; 
+  color: white;
+  background-color: #374151; 
+  transition: color 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #1F487E; 
+}
+
+
 
 
 /** end **/
