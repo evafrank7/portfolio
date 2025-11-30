@@ -117,7 +117,7 @@ export default function ContactPage() {
                 <Button
                   type="submit"
                   disabled={status === "sending"}
-                  className="w-full"
+                  className="button w-full"
                 >
                   {status === "sending" ? "Sending…" : "Send message"}
                 </Button>

@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import { NavBar } from "@/components/layout/navbar"
 import Image from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -22,11 +21,13 @@ export default function HomePage() {
             priority
           />
         </div>
-        <h1 className="text-5xl font-bold mb-4">Eva Frankovic</h1>
-        <p className="text-center mb-6 mt-2 ml-10 mr-10"> I am currently a User Engagement Specialist at the Pittsburgh Supercomputing Center, part of Carnegie Mellon University. Where alongside of adminsitrative work, I assist in the development 
-          of there internal web application using Ruby and Ruby on Rails. Recently, we have began tranisitioning the application to using React and Tailwind.css. I graduated from Bucknell University in May 2024 with a Bachelor’s degree in Computer Science.
-          While at Bucknell, I competed on the university’s varsity soccer team, where we won two Patriot League Championships. Now, as a recent graduate, I’m continuing to grow my technical toolkit by exploring frameworks such
-          as Bootstrap and React while strengthening my skills in HTML, CSS, and JavaScript. </p>
+        <h1 className="font-italiana text-6xl tracking-wide uppercase mb-2">
+          Eva Frankovic
+        </h1>
+        <h2 className="font-italiana text-xl tracking-[0.2em] uppercase mb-4">
+          Software Engineer & Creative Developer
+        </h2>
+        <p className="font-normal text-base text-center mb-6 mt-2 ml-10 mr-10"> I am currently a User Engagement Specialist at the Pittsburgh Supercomputing Center, part of Carnegie Mellon University. Alongside administrative responsibilities, I contribute to both the front-end and back-end of our internal web application. I support the transition to React and Tailwind CSS, maintain and extend features in the existing Ruby on Rails infrastructure, and assist with backend development by building and refining API routes using Python. I graduated from Bucknell University in May 2024 with a Bachelor’s degree in Computer Science and competed on the varsity women’s soccer team, where we won two Patriot League Championships. I continue to expand my full‑stack toolkit and develop clean, modern web experiences.</p>
         <div className="flex gap-6 justify-center mt-2">
           <FontAwesomeIcon icon={faLinkedin} className="icon" />
           <FontAwesomeIcon icon={faGithub} className="icon" />

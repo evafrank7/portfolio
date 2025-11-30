@@ -1,13 +1,9 @@
 import Link from "next/link";
 import {
     NavigationMenu,
-    NavigationMenuContent,
-    NavigationMenuIndicator,
     NavigationMenuItem,
     NavigationMenuLink,
     NavigationMenuList,
-    NavigationMenuTrigger,
-    NavigationMenuViewport,
 } from "@/components/ui/navigation-menu"
 
 export default function NavBar() {
@@ -16,22 +12,34 @@ export default function NavBar() {
             <NavigationMenu>
                 <NavigationMenuList className="flex space-x-6">
                     <NavigationMenuItem>
-                        <NavigationMenuLink asChild>
+                        <NavigationMenuLink
+                            asChild
+                            className="text-base nav-text"
+                        >
                             <Link href="/">Home</Link>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                        <NavigationMenuLink asChild>
-                            <Link href="/projects">Projects</Link>
+                        <NavigationMenuLink
+                            asChild
+                            className="text-base nav-text"
+                        >
+                            <Link href="/projects"> Projects</Link>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                        <NavigationMenuLink asChild>
+                        <NavigationMenuLink
+                            asChild
+                            className="text-base nav-text"
+                        >
                             <a href="resume/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                        <NavigationMenuLink asChild>
+                        <NavigationMenuLink
+                            asChild
+                            className="text-base nav-text"
+                        >
                             <Link href="/contact">Contact</Link>
                         </NavigationMenuLink>
                     </NavigationMenuItem>

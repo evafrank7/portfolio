@@ -10,7 +10,7 @@
 }
 
 .icon:hover {
-  color: #1F487E; 
+  color: #1D3461; 
 }
 
 .button {
@@ -21,10 +21,20 @@
 }
 
 .button:hover {
-  background-color: #1F487E; 
+  background-color: #1D3461; 
 }
 
+h1 {
+  color: #4B1F24
+}
 
+h2 {
+  color: #1D3461
+}
+
+.nav-text {
+  color: #1D3461;
+}
 
 
 /** end **/
@@ -146,5 +156,18 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .font-cormorant {
+    font-family: "Cormorant Garamond", serif;
+  }
+  .font-italiana {
+    font-family: "Italiana", serif;
+  }
+
+  .font-crimson {
+    font-family: "Crimson Pro", serif;
   }
 }
