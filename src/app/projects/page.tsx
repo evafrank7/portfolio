@@ -70,7 +70,7 @@ export default function ProjectsPage() {
     <>
       <NavBar />
       <main className="min-h-screen bg-gray-100 py-12 px-8">
-        <h1 className="text-4xl font-bold mb-8 text-center">My Projects</h1>
+        <h1 className="font-italiana uppercase text-3xl font-bold mb-8 text-center">My Projects</h1>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow">
