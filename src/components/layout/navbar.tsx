@@ -8,7 +8,7 @@ import {
 
 export default function NavBar() {
     return (
-        <header className="font-italiana uppercase flex justify-center items-center py-4 bg-gray-100">
+        <header className="flex justify-center items-center py-4 bg-gray-100">
             <NavigationMenu>
                 <NavigationMenuList className="flex space-x-6">
                     <NavigationMenuItem>
