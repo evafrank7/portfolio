@@ -11,16 +11,29 @@ const BodySchema = z.object({
   message: z.string().min(10),
 });
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(req: Request) {
   try {
     const json = await req.json();
     const body = BodySchema.parse(json);
 
-    if (!process.env.CONTACT_TO_EMAIL) {
-      throw new Error("Missing CONTACT_TO_EMAIL");
+    const apiKey = process.env.RESEND_API_KEY;
+    if (!apiKey) {
+      console.error("[/api/contact] Missing RESEND_API_KEY");
+      return NextResponse.json(
+        { ok: false, error: "Email service not configured" },
+        { status: 500 }
+      );
     }
+
+    if (!process.env.CONTACT_TO_EMAIL) {
+      console.error("[/api/contact] Missing CONTACT_TO_EMAIL");
+      return NextResponse.json(
+        { ok: false, error: "Email recipient not configured" },
+        { status: 500 }
+      );
+    }
+
+    const resend = new Resend(apiKey);
 
     // send the email
     await resend.emails.send({
