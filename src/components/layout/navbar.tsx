@@ -32,9 +32,13 @@ export default function NavBar() {
                             asChild
                             className="text-base nav-text"
                         >
-                            <Link href="/resume/Resume.pdf" target="_blank" rel="noopener noreferrer">
-                              Resume
-                            </Link>
+                            <a
+                                href="/resume/Resume.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Resume
+                            </a>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
@@ -50,5 +54,3 @@ export default function NavBar() {
         </header>
     )
 }
-
-export { NavBar };
