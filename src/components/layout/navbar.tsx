@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import {
     NavigationMenu,
@@ -5,8 +6,7 @@ import {
     NavigationMenuLink,
     NavigationMenuList,
 } from "@/components/ui/navigation-menu"
-
-export default function NavBar() {
+function NavBar() {
     return (
         <header className="flex justify-center items-center py-4 bg-gray-100">
             <NavigationMenu>
@@ -54,3 +54,4 @@ export default function NavBar() {
         </header>
     )
 }
+export default NavBar;

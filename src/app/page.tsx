@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { NavBar } from "@/components/layout/navbar"
+import NavBar from "@/components/layout/navbar"
 import Image from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";

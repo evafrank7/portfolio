@@ -4,7 +4,7 @@ import * as React from "react";
 import { z } from "zod"; // Validation library
 import { useForm } from "react-hook-form"; // State/validation manager
 import { zodResolver } from "@hookform/resolvers/zod"; //  bridge between zod & react-hook
-import { NavBar } from "@/components/layout/navbar"
+import  NavBar  from "@/components/layout/navbar"
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
