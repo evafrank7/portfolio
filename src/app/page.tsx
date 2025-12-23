@@ -29,8 +29,23 @@ export default function HomePage() {
         </h2>
         <p className="font-normal text-base text-center mb-6 mt-2 ml-10 mr-10"> I am currently a User Support Developer at the Pittsburgh Supercomputing Center, part of Carnegie Mellon University. Alongside administrative responsibilities, I contribute to both the front-end and back-end of our internal web application. I support the transition to React and Tailwind CSS, maintain and extend features in the existing Ruby on Rails infrastructure, and assist with backend development by building and refining API routes using Python. I graduated from Bucknell University in May 2024 with a Bachelor’s degree in Computer Science and competed on the varsity women’s soccer team, where we won two Patriot League Championships. I continue to expand my full‑stack toolkit and develop clean, modern web experiences.</p>
         <div className="flex gap-6 justify-center mt-2">
-          <FontAwesomeIcon icon={faLinkedin} className="icon" />
-          <FontAwesomeIcon icon={faGithub} className="icon" />
+          <a
+            href="https://www.linkedin.com/in/evafrankovic/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn profile"
+          >
+            <FontAwesomeIcon icon={faLinkedin} className="icon" />
+          </a>
+
+          <a
+            href="https://github.com/evafrank7"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub profile"
+          >
+            <FontAwesomeIcon icon={faGithub} className="icon" />
+          </a>
         </div>
 
         <Button className="m-8" asChild>
