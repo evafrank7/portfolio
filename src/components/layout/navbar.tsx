@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/navigation-menu"
 function NavBar() {
     return (
-        <header className="flex justify-center items-center py-4 bg-gray-100">
+        <header className="font-source-sans flex justify-center items-center py-4 bg-gray-100">
             <NavigationMenu>
                 <NavigationMenuList className="flex space-x-6">
                     <NavigationMenuItem>

@@ -60,18 +60,18 @@ export default function ContactPage() {
     <section className="h-screen flex flex-col justify-center items-center bg-gray-100 pb-70">
       <div className=" pt-25 w-full max-w-xl">
         <h1 className="font-italiana uppercase text-3xl font-bold tracking-tight">Contact me</h1>
-        <p className="font-italiana text-muted-foreground mt-2">
+        <p className="font-source-sans text-muted-foreground mt-2">
           Have a question or inqury in mind? Send me a message below!
         </p>
 
-        <div className="mt-6 rounded-lg border p-6">
+        <div className="mt-6 rounded-lg border border-[#1D3461] p-6">
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
               <FormField
                 control={form.control}
                 name="name"
                 render={({ field }) => (
-                  <FormItem>
+                  <FormItem >
                     <FormLabel>Name</FormLabel>
                     <FormControl>
                       <Input placeholder="Jane Doe" {...field} />
@@ -117,9 +117,9 @@ export default function ContactPage() {
                 <Button
                   type="submit"
                   disabled={status === "sending"}
-                  className="font-italiana uppercase button w-full"
+                  className="font-source-sans button w-full"
                 >
-                  {status === "sending" ? "Sending…" : "Send message"}
+                  {status === "sending" ? "Sending…" : "Submit"}
                 </Button>
                 {status === "sent" && (
                   <p className="mt-2 text-sm text-green-600">Message sent! I’ll reply soon. :)</p>

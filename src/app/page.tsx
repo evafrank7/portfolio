@@ -25,9 +25,9 @@ export default function HomePage() {
           Eva Frankovic
         </h1>
         <h2 className="font-italiana text-xl tracking-[0.2em] uppercase mb-4">
-          Software & Creative Developer
+          Software Developer
         </h2>
-        <p className="font-normal text-base text-center mb-6 mt-2 ml-10 mr-10"> I am currently a User Support Developer at the Pittsburgh Supercomputing Center, part of Carnegie Mellon University. Alongside administrative responsibilities, I contribute to both the front-end and back-end of our internal web application. I support the transition to React and Tailwind CSS, maintain and extend features in the existing Ruby on Rails infrastructure, and assist with backend development by building and refining API routes using Python. I graduated from Bucknell University in May 2024 with a Bachelor’s degree in Computer Science and competed on the varsity women’s soccer team, where we won two Patriot League Championships. I continue to expand my full‑stack toolkit and develop clean, modern web experiences.</p>
+        <p className="font-source-sans text-base text-center mb-6 mt-2 ml-10 mr-10"> I am currently a User Support Developer at the Pittsburgh Supercomputing Center, part of Carnegie Mellon University. Alongside administrative responsibilities, I contribute to both the front-end and back-end of our internal web application. I support the transition to React and Tailwind CSS, maintain and extend features in the existing Ruby on Rails infrastructure, and assist with backend development by building and refining API routes using Python. I graduated from Bucknell University in May 2024 with a Bachelor’s degree in Computer Science and competed on the varsity women’s soccer team, where we won two Patriot League Championships. I continue to expand my full‑stack toolkit and develop clean, modern web experiences.</p>
         <div className="flex gap-6 justify-center mt-2">
           <a
             href="https://www.linkedin.com/in/evafrankovic/"
@@ -49,7 +49,7 @@ export default function HomePage() {
         </div>
 
         <Button className="m-8" asChild>
-          <a className="font-italiana uppercase button" href="/contact"> Contact </a>
+          <a className="font-source-sans button" href="/contact"> Contact </a>
         </Button>
       </section>
     </>
