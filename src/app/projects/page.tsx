@@ -38,7 +38,7 @@ export default function ProjectsPage() {
       description: "A live chat app built in Rails 5 using Action Cable.",
       tech: "Ruby on Rails, Rails, Bootstrap",
       link: "https://github.com/evafrank7/messageMe",
-      live: "https://evafrank7.github.io/messageMe/",
+      live: "https://messageme-tczt.onrender.com",
     },
     {
       title: "AlphaBlog",
