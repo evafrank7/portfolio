@@ -46,7 +46,7 @@ export default function ProjectsPage() {
       description: "A full-stack Ruby on Rails blog app with user authentication, CRUD functionality, and responsive Bootstrap design.",
       tech: "Ruby on Rails, Rails, Bootstrap",
       link: "https://github.com/evafrank7/alphaBlog",
-      live: "https://evafrank7.github.io/alphaBlog/",
+      live: "https://alphablog-ia2y.onrender.com/",
     },
     {
       title: "Movie API",
