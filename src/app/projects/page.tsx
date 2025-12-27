@@ -22,7 +22,7 @@ export default function ProjectsPage() {
       description: "A Ruby on Rails app for tracking stock portfolios and user finances.",
       tech: "Ruby on Rails, PostgreSQL, Bootstrap",
       link: "https://github.com/evafrank7/finance-tracker",
-      live: "https://evafrank7.github.io/finance-tracker/",
+      live: "https://finance-tracker-s6yz.onrender.com/users/sign_in",
     },
     {
       title: "Portfolio Website",
