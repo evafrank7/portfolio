@@ -1,37 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Eva Frankovic — Portfolio
 
-## Getting Started
+Welcome to my personal software development portfolio.  
+This site showcases selected projects that highlight my experience building **full-stack web applications**, **data-driven tools**, and **user-focused interfaces**.
 
-First, run the development server:
+---
+
+## Tech Stack
+
+### Frontend
+- React / TypeScript
+- Next.js
+- Tailwind CSS
+- Shadcn UI
+- HTML5 / CSS3 / JavaScript (ES6+)
+
+### Backend
+- Ruby on Rails (5.x / 6.x)
+- Python (FastAPI)
+- RESTful APIs
+- Authentication & authorization (Devise, OAuth/OIDC)
+
+### Databases
+- PostgreSQL
+- SQLite (development)
+- ActiveRecord
+
+### Tooling & DevOps
+- Git & GitHub
+- Render (deployments)
+- Node / Yarn
+- Webpacker / Vite
+- CI-friendly workflows
+
+---
+
+## Featured Projects
+
+### Portfolio Website
+**Tech:** React, Tailwind, modern UI patterns  
+A curated showcase of my work with a focus on clean layout, responsive design, and performance.
+
+### Finance Tracker
+**Tech:** Ruby on Rails, PostgreSQL  
+A full-stack application for tracking expenses and financial data, including authentication and data visualization.
+
+### Real-Time Chat App
+**Tech:** Rails, WebSockets, ActionCable  
+A messaging application supporting live updates and user presence.
+
+### Academic / Research Platform Tooling
+**Tech:** Rails, React, FastAPI  
+Internal tooling built to support researcher onboarding, identity management, and data workflows.
+
+---
+
+##  Running Locally
 
 ```bash
-npm run dev
+# Clone the repository
+git clone https://github.com/evafrank7/portfolio.git
+
+# Install dependencies
+yarn install
+bundle install
+
+# Run the app
+rails server
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# portfolio
