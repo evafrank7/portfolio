@@ -65,6 +65,4 @@ yarn install
 bundle install
 
 # Run the app
-rails server
-# or
-yarn dev
+npm run dev
