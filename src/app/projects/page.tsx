@@ -1,16 +1,33 @@
+"use client";
+import { useState } from "react";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { faSafari } from "@fortawesome/free-brands-svg-icons";
 import NavBar from "@/components/layout/navbar";
+import ImageCarousel from "@/components/imageCarousel";
+import ProjectModal from "@/components/ProjectModal"
 
 export default function ProjectsPage() {
+  const [activeProject, setActiveProject] = useState<any | null>(null);
   // maybe create a json file to fetch? Implement a filtering feature???
   const projects = [
     {
+      title: "ACCESS Revamp",
+      heading: "Work in Progress - current project at Pittsburgh Supercomputing Center",
+      images:
+        [
+          "/access-images/dashboard.png",
+          "/access-images/password.png"
+        ],
+      description: "Currently I am working on revamping the ACCESS webiste from Rails and Ruby on Rails to a modern React and Next.js application with Tailwin CSS.",
+      subDescription: "I have built out a password change interface, user dashboard, profile intake form, and currently working on an SHH Key interface for users to manage their keys using FastAPI routes connected to two different Postgres databases.",
+      tech: "Next.js, React, Tailwind, TypeScript, FastAPI, Python",
+    },
+    {
       title: "La Prima",
       heading: "Work in Progress",
-      image: "/project-images/coffee.png",
+      images: ["/project-images/coffee.png"],
       description: "A React replica of a coffee shop website, only landing page for now.",
       tech: "React, Vite, JavaScript",
       link: "https://github.com/evafrank7/laprima",
@@ -18,7 +35,7 @@ export default function ProjectsPage() {
     },
     {
       title: "Finance Tracker",
-      image: "/project-images/finance.png",
+      images: ["/project-images/finance.png"],
       description: "A Ruby on Rails app for tracking stock portfolios and user finances.",
       tech: "Ruby on Rails, PostgreSQL, Bootstrap",
       link: "https://github.com/evafrank7/finance-tracker",
@@ -26,7 +43,7 @@ export default function ProjectsPage() {
     },
     {
       title: "Portfolio Website",
-      image: "/project-images/portfolio.png",
+      images: ["/project-images/portfolio.png"],
       description: "A modern developer portfolio built with Next.js and Tailwind CSS.",
       tech: "Next.js, Tailwind, TypeScript",
       link: "https://github.com/evafrank7/portfolio",
@@ -34,7 +51,7 @@ export default function ProjectsPage() {
     },
     {
       title: "Message Me Chat App",
-      image: "/project-images/message.png",
+      images: ["/project-images/message.png"],
       description: "A live chat app built in Rails 5 using Action Cable.",
       tech: "Ruby on Rails, Rails, Bootstrap",
       link: "https://github.com/evafrank7/messageMe",
@@ -42,7 +59,7 @@ export default function ProjectsPage() {
     },
     {
       title: "AlphaBlog",
-      image: "/project-images/blog.png",
+      images: ["/project-images/blog.png"],
       description: "A full-stack Ruby on Rails blog app with user authentication, CRUD functionality, and responsive Bootstrap design.",
       tech: "Ruby on Rails, Rails, Bootstrap",
       link: "https://github.com/evafrank7/alphaBlog",
@@ -51,14 +68,14 @@ export default function ProjectsPage() {
     {
       title: "Movie API",
       description: "A movie search app built with JavaScript and a public movie API to display film details, ratings, and posters in real time.",
-      image: "/project-images/movie.png",
+      images: ["/project-images/movie.png"],
       tech: "React, Vite, JavaScript",
       link: "https://github.com/evafrank7/movie-app",
       live: "https://evafrank7.github.io/movie-app/",
     },
     {
       title: "PSC Impact Stores",
-      image: "/project-images/psc.png",
+      images: ["/project-images/psc.png"],
       description: "An interview assignment demostrating use of HTML, CSS, and a simple back-end component.",
       tech: "HTML, CSS, JSON, Bootstrap",
       link: "https://github.com/evafrank7/PSC?tab=readme-ov-file",
@@ -71,22 +88,27 @@ export default function ProjectsPage() {
       <NavBar />
       <main className="min-h-screen bg-gray-100 py-12 px-8">
         <h1 className="font-italiana uppercase text-3xl font-bold mb-8 text-center">My Projects</h1>
+        <ProjectModal
+          project={activeProject}
+          onClose={() => setActiveProject(null)}
+        />
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
-            <Card key={index} className="hover:shadow-lg transition-shadow">
+            <Card
+              key={index}
+              onClick={() => setActiveProject(project)}
+              className="cursor-pointer hover:shadow-lg transition-shadow"
+            >
               <CardHeader>
                 <CardTitle>{project.title}</CardTitle>
                 <CardTitle className="text-sm font-normal text-red-500">{project.heading}</CardTitle>
                 <CardDescription>{project.tech}</CardDescription>
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className='aspect-video h-50 w-full rounded-xl object-cover'
-                />
+                <ImageCarousel images={project.images} alt={project.title} />
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700 mb-4">{project.description}</p>
-                <div className=" flex gap-3 mt-2 justify-left">
+                <p className="text-gray-700 text-xs mb-4">{project.subDescription}</p>
+                <div className="flex gap-3 mt-2 justify-left">
                   <a
                     href={project.link}
                     target="_blank"
