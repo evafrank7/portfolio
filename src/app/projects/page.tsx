@@ -20,9 +20,10 @@ export default function ProjectsPage() {
           "/access-images/dashboard.png",
           "/access-images/password.png"
         ],
-      description: "Currently I am working on revamping the ACCESS webiste from Rails and Ruby on Rails to a modern React and Next.js application with Tailwin CSS.",
-      subDescription: "I have built out a password change interface, user dashboard, profile intake form, and currently working on an SHH Key interface for users to manage their keys using FastAPI routes connected to two different Postgres databases.",
+      description: "Currently I am helping revamp the ACCESS website from Rails and Ruby on Rails to a modern React and Next.js application with Tailwind CSS, using FastAPI and Python on the backend to connect to two different Postgres databases.",
+      subDescription: "I have worked on the password change interface, user dashboard, profile intake and registration forms, SSH key management, and linked accounts identity interface, building FastAPI routes and frontend flows that help users manage their account information across two different Postgres databases. I also currently have a paper under review for PEARC 2026 based on this project.",
       tech: "Next.js, React, Tailwind, TypeScript, FastAPI, Python",
+      live: "https://account.access-ci.org/"
     },
     {
       title: "La Prima",
