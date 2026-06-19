@@ -21,7 +21,8 @@ export default function ProjectsPage() {
           "/access-images/identities.png",
           "/access-images/profile.png"
         ],
-      description: "Contributed to the redesign and implementation of the ACCESS registration and profile experience, a long-standing initiative aimed at simplifying how researchers gain access to national supercomputing resources. Worked across the frontend and backend to modernize account creation, profile management, and identity validation workflows using React, TypeScript, Ruby on Rails, and Python. Focused on reducing user friction and creating a more intuitive experience for researchers throughout the onboarding process.",
+      description: "ACCESS Allocations Revamp of Profile and Registration Process.",
+      subDescription: "Contributed to the redesign and implementation of the ACCESS registration and profile experience, a long-standing initiative aimed at simplifying how researchers gain access to national supercomputing resources. Worked across the frontend and backend to modernize account creation, profile management, and identity validation workflows using React, TypeScript, Ruby on Rails, and Python. Focused on reducing user friction and creating a more intuitive experience for researchers throughout the onboarding process.",
       live: "https://account.access-ci.org/",
     },
     {
