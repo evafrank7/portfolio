@@ -13,17 +13,16 @@ export default function ProjectsPage() {
   // maybe create a json file to fetch? Implement a filtering feature???
   const projects = [
     {
-      title: "ACCESS Revamp",
-      heading: "Work in Progress - current project at Pittsburgh Supercomputing Center",
+      title: "ACCESS Account Registration/Profile Revamp",
+      tech: "React, Python - FastAPI, Ruby on Rails, PostgreSQL, Tailwind CSS",
       images:
         [
-          "/access-images/dashboard.png",
-          "/access-images/password.png"
+          "/access-images/live-dashboard.png",
+          "/access-images/identities.png",
+          "/access-images/profile.png"
         ],
-      description: "Currently I am helping revamp the ACCESS website from Rails and Ruby on Rails to a modern React and Next.js application with Tailwind CSS, using FastAPI and Python on the backend to connect to two different Postgres databases.",
-      subDescription: "I have worked on the password change interface, user dashboard, profile intake and registration forms, SSH key management, and linked accounts identity interface, building FastAPI routes and frontend flows that help users manage their account information across two different Postgres databases. I also currently have a paper under review for PEARC 2026 based on this project.",
-      tech: "Next.js, React, Tailwind, TypeScript, FastAPI, Python",
-      live: "https://account.access-ci.org/"
+      description: "Contributed to the redesign and implementation of the ACCESS registration and profile experience, a long-standing initiative aimed at simplifying how researchers gain access to national supercomputing resources. Worked across the frontend and backend to modernize account creation, profile management, and identity validation workflows using React, TypeScript, Ruby on Rails, and Python. Focused on reducing user friction and creating a more intuitive experience for researchers throughout the onboarding process.",
+      live: "https://account.access-ci.org/",
     },
     {
       title: "La Prima",
@@ -108,7 +107,6 @@ export default function ProjectsPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700 mb-4">{project.description}</p>
-                <p className="text-gray-700 text-xs mb-4">{project.subDescription}</p>
                 <div className="flex gap-3 mt-2 justify-left">
                   <a
                     href={project.link}
